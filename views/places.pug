@@ -1,0 +1,18 @@
+doctype html
+html(lang='en-US')
+	head
+		meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
+		title Assignment 2 - Aspen
+		link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i', rel='stylesheet')
+		link(rel='stylesheet', type='text/css', media='all', href='/style/styleAspen.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js')
+	body
+		h1
+			strong
+				a(href='index.html') Ski the Globe
+		h3 #{placeName}
+		#map_wrapper
+			#map_canvas.mapping
+		script.
+			var placeName = '#{placeName}'
+		script(type='text/javascript', src='/script/scriptAspen.js')

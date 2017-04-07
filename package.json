@@ -11,6 +11,8 @@
   "dependencies": {
     "json-parser": "^1.1.5",
     "mongodb": "^2.2.22",
-    "mongoose": "^4.7.3"
+    "mongoose": "^4.7.3",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-beta11"
   }
 }

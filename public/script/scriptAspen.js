@@ -1,5 +1,7 @@
 // MAP CODE
+// Global : placeName
 $(function() {
+    console.log("LOCATION from Node -> Pug -> Script.js : " + placeName)
     // Asynchronously Load the map API 
     var script = document.createElement('script');
     script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDaidSgjFzj8MV98T7-PFBwvnDwS56c4e0&callback=initialize";
@@ -19,7 +21,7 @@ function initialize() {
         
     // Multiple Markers
     var markers = [
-        ['Aspen', 39.1911,-106.8175],
+        [placeName, 39.1911,-106.8175],//when you made changes in the app.js to retrieve lat and lon, you can call them with variables like placeName, so for example placeLat and placeLon
     ];
                               
     // Display multiple markers on a map
@@ -60,8 +62,6 @@ function initialize() {
     var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
         this.setZoom(11);
         google.maps.event.removeListener(boundsListener);
-    });
-    
+    });  
 }
-
 //END OF MAP CODE

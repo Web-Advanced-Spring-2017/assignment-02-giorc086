@@ -26,7 +26,12 @@
             let newLi = document.createElement('li'); //creates new li element in html
             newLi.innerText = item.resortName; //show name in li
             newLi.dataset.myCustomId = item.id; //add new data type to li tag with corresponding id
-            resultElement.appendChild(newLi);
+            // resultElement.append(newLi);
+            var eleLi = '<a href="/places/'+item.resortName +'"><li data-my-custom-id="'+item.id+'">'+item.resortName+'</li></a>'
+            console.log(eleLi)
+
+            // resultElement.append((eleLi))
+            $('.results').append(eleLi)
         }
         $('li').click(function(e) {
             let clickedResortId = $(this).attr('data-my-custom-id');
