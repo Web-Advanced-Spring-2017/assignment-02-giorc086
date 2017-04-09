@@ -1,10 +1,5 @@
 # Assignment 2 - RESTful API 
-3/5/2017
-
-##CURRENT BUGS:
-1. After doing `npm install`
-2. When you run `sudo mongod` and `nodemon app.js` and go to localhost:8080 the searchbar has become inactive. The error in the console says that there is something wrong with GET request from my API to access data from db.
-3. If you click on the Pin on the map of aspen you are re-directed to the page http://localhost:8080/aspen.html but the map does not load. The error in the console says that placeName is not defined. 
+3/9/2017
 
 #### To run the website at localhost:8080 install the node dependencies 
 1. In terminal start the mongo database by cd'ing into the folder and type: sudo mongod
