@@ -9,6 +9,8 @@
   "author": "Cecilia Giorcelli",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
     "json-parser": "^1.1.5",
     "mongodb": "^2.2.22",
     "mongoose": "^4.7.3",

@@ -16,10 +16,11 @@ To update the data in the database, in a new tab type: node update-temp and node
 ### Process
 The first step to build this app was to use the API On The Snow to gather the list of resorts in Colorado, the statistics and the weather reports for each one. The list of the resorts and their details is requested by running add-resorts once and update-profile whenever data needs to be updated. Then it gets saved in the MongoDB database with Mongoose and a model/schema of the db is created. In order to display the data from the database I created an API that gets the name of all the resorts and the info about each one.
 
-| Verb| URL endpoint  | Resource Description            |
-| ----|:-------------:| -------------------------------:|
-| GET | /resort       | Get list of resort, ids and info|
-| GET | /resort/id    | Get one resort                  |
+| Verb| URL endpoint     | Resource Description            |
+| ----|:----------------:| -------------------------------:|
+| GET | api/resort       | Get list of resort, ids and info|
+| GET | api/resort/id    | Get one resort                  |
+| GET | api/compare      | Compare two resorts             |
 
 The information from the database is used to show the list of resorts in the dropdown and to show stats about a clicked resort. 
 
